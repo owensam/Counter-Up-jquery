@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background: #BA55D3 none repeat scroll 0 0;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.layout {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+	padding: 0 15px;
+}
+/********Grid Widht *******/
+.grid-3 {	width: 25%;	float: left;	min-height: 1px;	padding-left: 15px;	padding-right: 15px;
+	position: relative;}
+/********Grid Widht *******/	
+
+
+
+
+/***Section Css******/
+.counting {
+    background: 	#8B008B none repeat scroll 0 0;
+    color: #fff;
+    overflow: hidden;
+    padding: 36px 0;
+}
+
+.counting span {
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+	text-align:center;
+	display:block;
+}
+.counting p {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    text-transform: uppercase;
+	text-align:center;
+}
+
+.counting span::before {
+    background: #b7b7b7 none repeat scroll 0 0;
+    bottom: -10px;
+    content: " ";
+    height: 4px;
+    left: 32%;
+    position: absolute;
+    width: 36%;
+}
+
+
+@media (max-width:980px) {
+	.layout {				width: 767px;	}
+	.grid-3 {				width: 50%;	}
+}
+@media (max-width:640px) {
+	.layout {		width: 300px;	}
+	.grid-3 {		width: 100%;	}
+
+
+	}
